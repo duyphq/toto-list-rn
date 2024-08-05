@@ -25,12 +25,13 @@ const DetailTask = () => {
     navigation.goBack();
   };
   return (
-    <FixedContainer>
+    <FixedContainer textHeader={'Create To do'}>
       <View style={styles.containContent}>
         <MyTextInput
           style={styles.textTitle}
           placeholder="Title"
           onChangeText={setTitle}
+          multiline
         />
       </View>
       <View style={styles.containButton}>

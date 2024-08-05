@@ -35,8 +35,8 @@ const Home = () => {
     );
   };
   return (
-    <FixedContainer>
-      <FlatList data={todoList} renderItem={renderItem} />
+    <FixedContainer onlyTitle textHeader="To do List">
+      <FlatList style={styles.list} data={todoList} renderItem={renderItem} />
       <TouchableOpacity style={styles.floatButton} onPress={onCreateTask}>
         <Image style={styles.iconPLus} source={ICON.plus} />
       </TouchableOpacity>
@@ -65,5 +65,8 @@ const styles = StyleSheet.create({
     width: widthScale(20),
     height: widthScale(20),
     tintColor: Colors.white,
+  },
+  list: {
+    marginTop: widthScale(24),
   },
 });

@@ -5,4 +5,5 @@ export const ICON = {
   delete: require('./icon/delete.png'),
   star_fill: require('./icon/star_fill.png'),
   star_outline: require('./icon/star_outline.png'),
+  left_arrow: require('./icon/left_arrow.png'),
 };
